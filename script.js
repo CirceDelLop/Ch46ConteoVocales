@@ -28,6 +28,7 @@ function leerValorNombre()
 
 function manejoEventoInputNombre()
 {
-    const nombre=leerValorNombre();
-    console.log(nombre);
+    const nombre=leerValorNombre().toLowerCase();
+    const numLetraA=encontrarNumeroDeLetra("a",nombre);
+    console.log("Cantidad de letras A: "+numLetraA);
 }
